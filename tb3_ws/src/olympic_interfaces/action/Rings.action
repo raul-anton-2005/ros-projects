@@ -1,0 +1,6 @@
+float32 radius
+---
+int32 rings_completed
+---
+int32 drawing_ring
+float32 ring_angle

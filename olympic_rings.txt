@@ -1,0 +1,29 @@
+Changing the background: 
+
+    usuario@labrob25:~$ ros2 param set turtlesim background_r 255 
+    Set parameter successful
+    usuario@labrob25:~$ ros2 param set turtlesim background_b 255 
+    Set parameter successful
+    usuario@labrob25:~$ ros2 param set turtlesim background_g 255 
+    Set parameter successful
+
+
+Generating 5 turtles:
+    We use /spawn service to spawn the turtles and /teleport_absolute service to move the turtle to the place we want. Then we use /clear to erase the drawings.
+        turtle1: x=5.2; y=7
+        turtle2: x=2.8; y=7
+        turtle3: x=7.6; y=7
+        turtle4: x=4; y=6
+        turtle5: x=6.4; y=6
+
+Setting pen colour:
+    We use /set_pen service per turtle.
+        turtle1: black (0, 0, 0)
+        turtle2: blue (0, 0, 255)
+        turtle3: red (255, 0, 0)
+        turtle4: yellow (255, 255, 0)
+        turtle5: green (0, 255, 0)
+
+Setting velocity:
+    We use /turtleX/cmd_vel topic where we publish linear and angular speeds. 
+    Every turtle has value 1 in linear x speed and angular z speed.
